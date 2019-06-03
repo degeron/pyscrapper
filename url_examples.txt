@@ -1,0 +1,33 @@
+#https://www.reddit.com/r/Art.json?sort=new&after=t3_bvq20s
+#https://www.reddit.com/r/aww/comments/a2a5t2/this_sevenyearold_girl_shows_friends_her_new/.json
+#https://www.reddit.com/r/aww/comments/a2a5t2.json
+
+
+#post fields:
+name String = t3_5xyxl5 (t3_*) # can be used as https://www.reddit.com/r/aww/comments/*.json
+id	String = 5xyxl5
+author_fullname	 String = t2_gspqh
+subreddit_id  String = t5_2t3p6
+author	String = Ronjoe_CB
+permalink	String = /r/chastity/comments/5xyxl5/getting_not_allowed_to_post_try_using_the_site/
+
+
+#https://www.reddit.com/r/aww/comments/a2a5t2.json
+
+Value	/r/aww/comments/a2a5t2/this_sevenyearold_girl_shows_friends_her_new/
+
+#comments
+#url
+https://www.reddit.com/user/snehasankhla/comments.json
+#fields
+['kind'] == Listing
+['data']
+        ['dist'] - size
+        ['children']
+                    [int]
+                         ['kind']
+                         ['data']
+                                 ['subreddit_id']
+                                 ['subreddit']
+                                 ['link_id'] - for post
+
